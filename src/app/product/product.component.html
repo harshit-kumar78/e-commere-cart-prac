@@ -1,0 +1,11 @@
+<div>
+  <p><strong>product name :</strong>{{ product.name }}</p>
+  <p><strong>qty:</strong>{{ product.qty }}</p>
+  <p><strong>Total Price:</strong>{{ product.qty * product.price }}</p>
+  <button (click)="updateCart()">
+    {{ isAdded ? "Remove from " : "add to" }} cart
+  </button>
+  <button (click)="incQty()">inc qty</button>
+  <button (click)="decQty()">dec qty</button>
+</div>
+<hr />
